@@ -1,0 +1,163 @@
+<html><head><base href="https://servicenow.accounting.app/bonds-dashboard%20the%20width%20of%20the%20card%20container%20should%20be%201000px%20and%20height%20should%20be%20400%20px">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grant Application Dashboard</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f2f5;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .dashboard {
+            width: 1000px;
+            height: 400px;
+            overflow: auto;
+        }
+        .application-card {
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            padding: 25px;
+            height: calc(100% - 50px);
+        }
+        .metric {
+            margin-bottom: 20px;
+        }
+        .metric-title {
+            font-size: 14px;
+            color: #34495e;
+            margin-bottom: 6px;
+            font-weight: 600;
+        }
+        .metric-value {
+            font-size: 24px;
+            font-weight: bold;
+            color: #2c3e50;
+        }
+        .progress-bar {
+            height: 10px;
+            background-color: #ecf0f1;
+            border-radius: 5px;
+            overflow: hidden;
+            margin-top: 6px;
+        }
+        .progress-fill {
+            height: 100%;
+            border-radius: 5px;
+            transition: width 0.5s ease-in-out;
+        }
+        .scoring-info {
+            margin-top: 20px;
+        }
+        .info-columns {
+            display: flex;
+            justify-content: space-between;
+            gap: 30px;
+        }
+        .info-column {
+            flex: 1;
+        }
+        .info-row {
+            margin-bottom: 15px;
+        }
+        .info-label {
+            font-size: 12px;
+            color: #7f8c8d;
+            margin-bottom: 4px;
+            font-weight: 600;
+        }
+        .info-value {
+            font-size: 14px;
+            font-weight: bold;
+            color: #2c3e50;
+            margin-top: 4px;
+        }
+        .score-bar {
+            height: 8px;
+            background-color: #ecf0f1;
+            border-radius: 4px;
+            overflow: hidden;
+            margin-top: 6px;
+        }
+        .score-fill {
+            height: 100%;
+            border-radius: 4px;
+            transition: width 0.5s ease-in-out;
+        }
+    </style>
+</head>
+<body>
+    <div class="dashboard">
+        <div class="application-card">
+            <div class="metric">
+                <div class="metric-title">Requested Grant Amount</div>
+                <div class="metric-value">$2,300</div>
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 76.7%; background-color: #27ae60;"></div>
+                </div>
+            </div>
+            <div class="scoring-info">
+                <div class="info-columns">
+                    <div class="info-column">
+                        <div class="info-row">
+                            <div class="info-label">Opportunity Decision Score</div>
+                            <div class="score-bar">
+                                <div class="score-fill" style="width: 86.7%; background-color: #e74c3c;"></div>
+                            </div>
+                            <div class="info-value">39</div>
+                        </div>
+                        <div class="info-row">
+                            <div class="info-label">Timeliness of Opportunity Score</div>
+                            <div class="score-bar">
+                                <div class="score-fill" style="width: 84.4%; background-color: #f39c12;"></div>
+                            </div>
+                            <div class="info-value">38</div>
+                        </div>
+                        <div class="info-row">
+                            <div class="info-label">Artistic Merit Score</div>
+                            <div class="score-bar">
+                                <div class="score-fill" style="width: 93.3%; background-color: #2ecc71;"></div>
+                            </div>
+                            <div class="info-value">42</div>
+                        </div>
+                        <div class="info-row">
+                            <div class="info-label">Budget Narrative Score</div>
+                            <div class="score-bar">
+                                <div class="score-fill" style="width: 88.9%; background-color: #16a085;"></div>
+                            </div>
+                            <div class="info-value">40</div>
+                        </div>
+                    </div>
+                    <div class="info-column">
+                        <div class="info-row">
+                            <div class="info-label">Career Impact Score</div>
+                            <div class="score-bar">
+                                <div class="score-fill" style="width: 95.6%; background-color: #9b59b6;"></div>
+                            </div>
+                            <div class="info-value">43</div>
+                        </div>
+                        <div class="info-row">
+                            <div class="info-label">Artistic Qualifications Score</div>
+                            <div class="score-bar">
+                                <div class="score-fill" style="width: 100%; background-color: #1abc9c;"></div>
+                            </div>
+                            <div class="info-value">45</div>
+                        </div>
+                        <div class="info-row">
+                            <div class="info-label">Budget Details Score</div>
+                            <div class="score-bar">
+                                <div class="score-fill" style="width: 91.1%; background-color: #34495e;"></div>
+                            </div>
+                            <div class="info-value">41</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body></html>
